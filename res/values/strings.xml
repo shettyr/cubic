@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cubic</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hello">Hello World !! Welcome to Cubic</string>
+    <string name="title_activity_home">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+    <string name="action_practice">Practice</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome">Welcome to cubic, a new and improved speller application</string>
+    <string name="title_activity_practice">PracticeActivity</string>
+    <string name="learn_text">Enter word and click submit to get pronunication and definiton</string>
+    <string name="enter_word">Enter word</string>
+    <string name="title_activity_learn">Learn</string>
+    <string name="word_sound">pronunce word</string>
+    <string name="b_learn_value">Learn</string>
+    <string name="definition_text">Definition :</string>
+
+</resources>
