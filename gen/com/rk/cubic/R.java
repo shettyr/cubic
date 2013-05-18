@@ -32,6 +32,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int activity_horizontal_margin=0x7f060001;
         public static final int activity_vertical_margin=0x7f060002;
+        public static final int text_24dp=0x7f060003;
         public static final int text_message=0x7f060000;
     }
     public static final class drawable {
@@ -40,27 +41,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class id {
         public static final int LinearLayout1=0x7f0a0000;
-        public static final int action_home=0x7f0a000b;
-        public static final int action_learn=0x7f0a000c;
-        public static final int action_practice=0x7f0a000d;
-        public static final int action_settings=0x7f0a000e;
+        public static final int RelativeLayout1=0x7f0a0008;
+        public static final int action_home=0x7f0a000e;
+        public static final int action_learn=0x7f0a000f;
+        public static final int action_practice=0x7f0a0010;
+        public static final int action_settings=0x7f0a0011;
         public static final int button1=0x7f0a0003;
+        public static final int buttonNextWord=0x7f0a000a;
         public static final int definitionTextView=0x7f0a0005;
-        public static final int homeTab=0x7f0a0008;
-        public static final int learnTab=0x7f0a0009;
+        public static final int homeTab=0x7f0a000b;
+        public static final int learnTab=0x7f0a000c;
         public static final int listView=0x7f0a0007;
-        public static final int newWordInput=0x7f0a0002;
         public static final int playIcon=0x7f0a0006;
-        public static final int practiceTab=0x7f0a000a;
+        public static final int practiceTab=0x7f0a000d;
+        public static final int spellWordInput=0x7f0a0002;
         public static final int textView1=0x7f0a0001;
         public static final int textView2=0x7f0a0004;
+        public static final int textViewStatus=0x7f0a0009;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
         public static final int activity_learn=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int activity_practice=0x7f030003;
-        public static final int activity_tab=0x7f030004;
+        public static final int activity_level=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_practice=0x7f030004;
+        public static final int activity_tab=0x7f030005;
     }
     public static final class menu {
         public static final int home=0x7f090000;
@@ -72,19 +77,25 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int action_practice=0x7f070007;
         public static final int action_settings=0x7f070005;
         public static final int app_name=0x7f070000;
-        public static final int b_learn_value=0x7f07000f;
-        public static final int definition_text=0x7f070010;
+        public static final int b_check_value=0x7f070015;
+        public static final int b_learn_value=0x7f070010;
+        public static final int btn_next_word=0x7f070016;
+        public static final int definition_text=0x7f070011;
         public static final int dummy_button=0x7f070001;
         public static final int dummy_content=0x7f070002;
-        public static final int enter_word=0x7f07000c;
+        public static final int enter_word=0x7f07000d;
         public static final int hello=0x7f070003;
         public static final int hello_world=0x7f070008;
-        public static final int learn_text=0x7f07000b;
+        public static final int learn_text=0x7f07000c;
+        public static final int spell_word=0x7f070014;
+        public static final int text_practice_instruction=0x7f070012;
+        public static final int text_pronunciation=0x7f070013;
         public static final int title_activity_home=0x7f070004;
-        public static final int title_activity_learn=0x7f07000d;
+        public static final int title_activity_learn=0x7f07000e;
         public static final int title_activity_practice=0x7f07000a;
+        public static final int title_activity_selectlevel=0x7f07000b;
         public static final int welcome=0x7f070009;
-        public static final int word_sound=0x7f07000e;
+        public static final int word_sound=0x7f07000f;
     }
     public static final class style {
         /** 

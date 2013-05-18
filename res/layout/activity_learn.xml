@@ -15,7 +15,7 @@
         android:text="@string/learn_text" />
 
     <EditText
-        android:id="@+id/newWordInput"
+        android:id="@+id/spellWordInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -34,9 +34,9 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/newWordInput"
-        android:layout_alignBottom="@+id/newWordInput"
-        android:layout_toRightOf="@+id/newWordInput"
+        android:layout_alignBaseline="@+id/spellWordInput"
+        android:layout_alignBottom="@+id/spellWordInput"
+        android:layout_toRightOf="@+id/spellWordInput"
         android:onClick="learnNewWord"
         android:text="@string/b_learn_value" />
 
@@ -44,8 +44,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/newWordInput"
-        android:layout_below="@+id/newWordInput"
+        android:layout_alignLeft="@+id/spellWordInput"
+        android:layout_below="@+id/spellWordInput"
         android:layout_marginTop="17dp"
         android:text="@string/definition_text" />
 
@@ -62,7 +62,7 @@
         android:id="@+id/playIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/newWordInput"
+        android:layout_below="@+id/spellWordInput"
         android:layout_centerHorizontal="true"
         android:contentDescription="pronunication"
         android:onClick="playWord"

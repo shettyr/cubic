@@ -49,8 +49,9 @@ public class LearnActivity extends Activity  {
 
 	@Override
 	protected void onStart() {
+		super.onStart();
 		hidePlayIcon();
-		EditText newWordInput = (EditText)findViewById(R.id.newWordInput);
+		EditText newWordInput = (EditText)findViewById(R.id.spellWordInput);
 		newWordInput.addTextChangedListener(new TextWatcher(){
 	        public void afterTextChanged(Editable s) {
 	        	//clearDefinition
@@ -61,7 +62,6 @@ public class LearnActivity extends Activity  {
 	        public void beforeTextChanged(CharSequence s, int start, int count, int after){}
 	        public void onTextChanged(CharSequence s, int start, int before, int count){}
 	    }); 
-		super.onStart();
 		Intent dictIntent = new Intent(this,DictionaryService.class);
 		Logger.getLogger("Cubic").info("binding to Dictionary Service");
 		bindService(dictIntent,dictConnection,Context.BIND_AUTO_CREATE);
@@ -75,6 +75,7 @@ public class LearnActivity extends Activity  {
             unbindService(dictConnection);
             dictBound = false;
         }
+        MediaHelper.release();
     }
 	
 	private void hidePlayIcon(){
@@ -87,10 +88,10 @@ public class LearnActivity extends Activity  {
     	playIcon.setVisibility(View.VISIBLE);				
 	}
 	
-    /** Called when a sound icosn is clicked (the button in the layout file attaches to
+    /** Called when a sound icon is clicked (the button in the layout file attaches to
      * this method with the android:onClick attribute) */
 	public void playWord(View v){
-		EditText newWordInput = (EditText)findViewById(R.id.newWordInput);
+		EditText newWordInput = (EditText)findViewById(R.id.spellWordInput);
 		String newWord = newWordInput.getText().toString().toLowerCase();
 		MediaHelper.playSound(newWord);
 	}
@@ -113,7 +114,7 @@ public class LearnActivity extends Activity  {
 
 		@Override
 		protected List<String> doInBackground(String... params) {
-			EditText newWordInput = (EditText)findViewById(R.id.newWordInput);
+			EditText newWordInput = (EditText)findViewById(R.id.spellWordInput);
 			String newWord = newWordInput.getText().toString().toLowerCase();
 			Log.i("Cubic","new word is "+ newWord);
 			MediaHelper.playSound(newWord);
@@ -150,7 +151,7 @@ public class LearnActivity extends Activity  {
    }
    
    public void clearInput(){
-	   EditText newWordInput = (EditText)findViewById(R.id.newWordInput);
+	   EditText newWordInput = (EditText)findViewById(R.id.spellWordInput);
 	   newWordInput.setText("");
    }
 	

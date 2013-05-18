@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.rk.cubic.MainActivity"
+            android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" >
@@ -24,28 +24,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.rk.cubic.HomeActivity"
-            android:label="@string/title_activity_home" >
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.rk.cubic.PracticeActivity"
-            android:label="@string/title_activity_practice" >
+            android:name=".SelectLevelActivity"
+            android:label="@string/title_activity_selectlevel" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomeActivity" />
 
+        </activity>
+        <activity
+            android:name=".PracticeActivity"
+            android:label="@string/title_activity_practice" 
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SelectLevelActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.PRACTICE" />
             </intent-filter>
-        </activity>
+        </activity>        
         <activity
-            android:name="com.rk.cubic.LearnActivity"
+            android:name=".LearnActivity"
             android:label="@string/title_activity_learn" >
+            <intent-filter>
+                <action android:name="android.intent.action.LEARN" />
+            </intent-filter>
         </activity>
         <service
             android:name=".DictionaryService"
